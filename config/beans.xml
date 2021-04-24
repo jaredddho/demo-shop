@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:hz="http://www.hazelcast.com/schema/spring"
+       xmlns:repository="http://www.springframework.org/schema/data/repository"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/data/repository
+        http://www.springframework.org/schema/data/repository/spring-repository.xsd
+        http://www.hazelcast.com/schema/spring
+        http://www.hazelcast.com/schema/spring/hazelcast-spring.xsd">
+
+    <repository:jackson2-populator locations="file:config/data.json"/>
+
+    <hz:hazelcast id="hazelcastInstance">
+        <hz:config>
+            <hz:map name="products"
+                    max-idle-seconds="1800"
+                    time-to-live-seconds="1800"/>
+            <hz:map name="users"
+                    max-idle-seconds="1800"
+                    time-to-live-seconds="1800"/>
+        </hz:config>
+    </hz:hazelcast>
+</beans>

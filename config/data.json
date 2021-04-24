@@ -1,0 +1,34 @@
+[
+  {
+    "_class": "jaredddho.demoshop.model.Product",
+    "id": "5f6ef77f855275499f40460d",
+    "name": "Apple",
+    "description": "",
+    "price": 5.00
+  },
+  {
+    "_class": "jaredddho.demoshop.model.Product",
+    "id": "5f6f415410f57b30a777e2da",
+    "name": "Orange",
+    "description": "",
+    "price": 8.00
+  },
+  {
+    "_class": "jaredddho.demoshop.model.Product",
+    "name": "Banana",
+    "description": "",
+    "price": 8.00
+  },
+  {
+    "_class": "jaredddho.demoshop.model.Product",
+    "name": "Mango",
+    "description": "",
+    "price": 8.00
+  },
+  {
+    "_class": "jaredddho.demoshop.model.Product",
+    "name": "Avocado",
+    "description": "",
+    "price": 8.00
+  }
+]
